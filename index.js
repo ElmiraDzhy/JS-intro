@@ -1,23 +1,27 @@
-console.log(5>6);
-console.log(3<=8);
+let cat =1; 
+let dog =2;
+let rat = 4;
 
-console.log('t' > 'a');
+let sum = cat + rat + dog;
+
+if( (sum) > 2 ){
+   console.log(sum);
+} 
+ 
+let userAge = 15;
+
+if(userAge >= 18){
+    alert('adult');
+} else{
+    alert('you are small')
+}
 
 
-/*
+let appleColor = 'green';
 
-false 
-true
-
-true
-*/
-
-console.log();
-
-
-
-let first = 'cat';
-let second = 'dog';
-
-console.log(`second > first = ${second > first}`);
-
+if(appleColor === 'red'){
+    alert('apple is red');
+}
+else{
+    alert('different colored apple');
+}
