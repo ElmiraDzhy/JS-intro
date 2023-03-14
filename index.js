@@ -1,33 +1,23 @@
-console.log(typeof 'str');
-console.log(typeof true);
-console.log(typeof 1);
-console.log(typeof null);
-console.log(typeof undefined);
+console.log(5>6);
+console.log(3<=8);
 
+console.log('t' > 'a');
 
-console.log(!false);
-console.log(!NaN);
-console.log(!null);
 
 /*
-string
-boolean
-number
-object
-undefined
 
+false 
+true
 
-true
-true
 true
 */
 
-console.log(!!'1');
-console.log(!!NaN);
-console.log(!!null);
+console.log();
 
-/**
- * true
- * false
- * false
- */
+
+
+let first = 'cat';
+let second = 'dog';
+
+console.log(`second > first = ${second > first}`);
+
