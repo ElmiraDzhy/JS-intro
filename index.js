@@ -1,27 +1,10 @@
-let cat =1; 
-let dog =2;
-let rat = 4;
+'use strict';
 
-let sum = cat + rat + dog;
-
-if( (sum) > 2 ){
-   console.log(sum);
-} 
- 
-let userAge = 15;
-
-if(userAge >= 18){
-    alert('adult');
-} else{
-    alert('you are small')
-}
+let age = 18;
+let result; 
 
 
-let appleColor = 'green';
+age >= 18 ? result = 'adult' :  result = 'not adult';
 
-if(appleColor === 'red'){
-    alert('apple is red');
-}
-else{
-    alert('different colored apple');
-}
+
+console.log(result);
