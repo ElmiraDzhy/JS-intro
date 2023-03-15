@@ -1,17 +1,9 @@
 'use strict';
 
 
-
-//
-
-let a = Number(prompt());
-let b = Number(prompt());
-
-function mySum (a, b){
-    return a + b;
+function getBiggerNum (a = Number(prompt()), b = Number(prompt())){
+    return a > b ? a : b;
 }
-console.log(mySum(a,b));
-
 
 function sum2 (...args){
     let result = 0;
@@ -21,6 +13,12 @@ function sum2 (...args){
     return result;
 }
 
+function isEven (num){
+    return num % 2 ? false : true;
+    // return !Boolean(num % 2);
+}
+
+const isEven2 = num =>  num % 2 === 0 ? true : false;
 
 
 
