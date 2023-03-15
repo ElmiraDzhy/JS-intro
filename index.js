@@ -1,40 +1,25 @@
 'use strict';
 
 
-let userAge = Number(prompt());
 
 //
-function isAdult (userAge){
-    return userAge >= 18 ? true : false;
-}
 
-console.log(`${isAdult(userAge) ? 'user is adult' : 'user is not adult' }`);
-
-//
+let a = Number(prompt());
+let b = Number(prompt());
 
 function mySum (a, b){
-    return a +b;
+    return a + b;
 }
+console.log(mySum(a,b));
 
 
-console.log(mySum(5,16));
-
-//
-
-const divElem = document.createElement('div');
-document.body.appendChild(divElem);
-divElem.style.backgroundColor = 'blue';
-divElem.style.height = '100px';
-divElem.style.width = '100px';
-divElem.textContent = 'Text from js.file';
-divElem.style.color = 'white';
-
-//
-
-function argFun(...arg){
-    return arg.map((item) => item*item);
+function sum2 (...args){
+    let result = 0;
+    for(let i = 0; i < args.length; i++){
+        result += args[i];
+    }
+    return result;
 }
-
 
 
 
