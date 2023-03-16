@@ -1,65 +1,24 @@
 'use strict';
 
-const PI = 3.14;
-
-function average (a, b){
-    return  isNaN(a) || isNaN(b) ? false : (a+b)/2;
-} 
-
-function quadEquation(a,b,c){
-    let D = (b * b) - (4 * a * c);
-
-    if(D < 0){
-
-        return false;
-
-    } 
-     if(D === 0){
-
-        return -b/(2*a);
-
-    } 
-     if(D > 0){
-
-         return ` x1 = ${(-b + Math.sqrt(D)) / (2*a)} x2 = ${(-b - Math.sqrt(D)) /( 2*a)}`;
-    }
-
+function firstF (func){
+ return func();
 }
 
-function circleRadius(r){
-    return 2*PI*r;
-
+function secondF(){
+    return 'Hello from second function!';
 }
+
+console.log(firstF(secondF));
 
 /**
  * 
- * @param {number} radius
- * @param {number} height
- * @returns {number}
+ * @param {Date} obj 
+ * @returns {string}
  */
-function cylinderVolume (r, h) {
-    return PI * (r*r) * h;
+function myClock (obj){
+    return `Now is ${obj.getHours()} 
+            hours and ${obj.getMinutes()} 
+            minutes and ${obj.getSeconds()} seconds`;
 }
 
-let func = function(){
-    return;
-}
-
-let arrowFunc = x => x * x;
-
-//immidiately invoked function
-
-(function (){
-    console.log('hello');
-})()
-
-
-
-
-
-
-
-
-
-
-
+const dateObj = new Date();
