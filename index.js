@@ -1,22 +1,59 @@
 'use strict';
 
+const PI = 3.14;
 
-function toSquare(...args){
-    return args.map( item => item*item );
+function average (a, b){
+    return  isNaN(a) || isNaN(b) ? false : (a+b)/2;
+} 
+
+function quadEquation(a,b,c){
+    let D = (b * b) - (4 * a * c);
+
+    if(D < 0){
+
+        return false;
+
+    } 
+     if(D === 0){
+
+        return -b/(2*a);
+
+    } 
+     if(D > 0){
+
+         return ` x1 = ${(-b + Math.sqrt(D)) / (2*a)} x2 = ${(-b - Math.sqrt(D)) /( 2*a)}`;
+    }
+
 }
 
-const toSquare2 = (...args) => args.map( item => item*item )
+function circleRadius(r){
+    return 2*PI*r;
 
-
-function threeNum (a, b, c){
-    return a*b/c;
 }
 
-const threeNum2 = (a, b, c) =>  a*b/c;
-
-function greeting (str){
-    return `Hello, ${str}!`;
+/**
+ * 
+ * @param {number} radius
+ * @param {number} height
+ * @returns {number}
+ */
+function cylinderVolume (r, h) {
+    return PI * (r*r) * h;
 }
 
-const greeting2 = str => `Hello, ${str}`;
+let func = function(){
+    return;
+}
+
+let arrowFunc = x => x * x;
+
+
+
+
+
+
+
+
+
+
 
