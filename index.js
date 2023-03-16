@@ -47,6 +47,12 @@ let func = function(){
 
 let arrowFunc = x => x * x;
 
+//immidiately invoked function
+
+(function (){
+    console.log('hello');
+})()
+
 
 
 
