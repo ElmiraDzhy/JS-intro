@@ -22,3 +22,35 @@ function myClock (obj){
 }
 
 const dateObj = new Date();
+
+/**
+ * 
+ * @param {number} num 
+ * @returns {string}
+ */
+function getDevider(num){
+let result = '';
+
+    if(num % 2 === 0){
+
+        result += 'devide by 2';
+
+    } else if( num % 3 === 0){
+
+        result += 'devide by 3';
+
+    } else if( num % 5 === 0){
+
+        result+= 'devide by 5';
+
+    } else{
+        return 'devide by nothing';
+    }
+    return result;
+
+}
+
+// console.log(getDevider(12));
+// console.log(getDevider(15));
+// console.log(getDevider(25));
+// console.log(getDevider(11));
