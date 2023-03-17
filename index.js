@@ -2,59 +2,35 @@
 
 //learn loops
 
-// for (let i = 0; i < 10; i+=2) {
-//     console.log(i);
-// }
+//homework task :
 
-
-let counter = 0;
-while (counter < 3) {
-    console.log(counter);
-    counter++;
-}
-
-console.group();
-
-let i = 0;
-while (i <= 10) {
-    console.log(i);
-    i++;
-}
-
-console.groupEnd();
-
-// let index = 0;
-// while (index <= 10) {
-//     if(index % 2 === 0){
-//         console.log(index);
-//     }
-//     index++;
-// }
-
-console.group();
-let index = 0;
-while (index <= 10) {
-    if(index % 3 === 0){
-        console.log(`${index} divide by 3`);
+function fizzbuzz (){
+    for(let i = 0; i < 100; i++){
+        if( i % 3 === 0 && i % 5 === 0 ){
+            console.log('fizzbuzz')
+        } else if( i % 3 === 0 ){
+            console.log('fizz')
+        }else if( i % 5 === 0 ){
+            console.log('buzz')
+        } else {
+            console.log(i);
+        }
+       
     }
-
-    if(index % 5 === 0){
-        console.log(`${index} divide by 5`);
-    }
-    index++;
 }
 
-let a = 0;
-let sum = 0;
-while (a <= 20) {
-    sum += a;
-    a++;
+function guessNumber(){
+let userNumber = Number(prompt('input number'));
+
+    while(userNumber !== number){
+        userNumber > number ? console.log('to big') : console.log('to small');
+        userNumber = Number(prompt('input number'));
+   }
+   console.log('You win!');
 }
 
-console.log(sum);
+let number = Math.round(Math.random()*10);
 
-console.groupEnd();
+guessNumber();
 
-// do {
-    
-// } while (condition);
+
