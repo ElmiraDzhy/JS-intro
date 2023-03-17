@@ -1,64 +1,51 @@
 'use strict';
 
+function calculator(){
+    let userInput1 = Number(prompt('input first number'));
+    let userInput2 = Number(prompt('input second number'));
 
-let choice = Number(prompt( ));
+    let userAction = prompt('what do you want?');
 
+    switch (userAction) {
+        case '*':
+            return multiplication(userInput1, userInput2);
+           
 
+        case '/':
+            return division(userInput1, userInput2);
+         
 
-function userChoice(num){
-let result = '';
+        case '+':
+            return plus(userInput1, userInput2);
+           
 
-
-    if( isNaN(num) ){
-        return 'you input wrong type of data';
-    }
-
-    switch (num) {
-        case 1:
-            
-            result += 'monday';
-            break;
-
-        case 2:
-
-            result += ' tuesday';
-            break;
-
-        case 3:
-
-            result += 'wednesday';
-            break;
-
-        case 4:
-
-            result += 'thursday';
-            break;
-
-        case 5:
-
-            result += 'friday';
-            break;
-
-        case 6:
-
-            result += 'saturday';
-            break;
-
-        case 7:
-
-            result += 'sunsday';
-            break;
+        case '-':
+            return minus(userInput1,userInput2);
+           
     
         default:
-            result += 'you did not choose anything';
+            break;
     }
-
-    return result;
+   
 
 }
 
-alert(userChoice(choice));
+function plus(a, b){
+return a + b;
+}
+
+function minus(a, b){
+return a - b;
+}
+
+function division(a, b){
+return a / b;
+}
+
+function multiplication(a, b){
+return a * b;
+}
 
 
-
+console.log(calculator());
 
