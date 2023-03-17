@@ -1,51 +1,60 @@
 'use strict';
 
-function calculator(){
-    let userInput1 = Number(prompt('input first number'));
-    let userInput2 = Number(prompt('input second number'));
+//learn loops
 
-    let userAction = prompt('what do you want?');
+// for (let i = 0; i < 10; i+=2) {
+//     console.log(i);
+// }
 
-    switch (userAction) {
-        case '*':
-            return multiplication(userInput1, userInput2);
-           
 
-        case '/':
-            return division(userInput1, userInput2);
-         
+let counter = 0;
+while (counter < 3) {
+    console.log(counter);
+    counter++;
+}
 
-        case '+':
-            return plus(userInput1, userInput2);
-           
+console.group();
 
-        case '-':
-            return minus(userInput1,userInput2);
-           
-    
-        default:
-            break;
+let i = 0;
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+console.groupEnd();
+
+// let index = 0;
+// while (index <= 10) {
+//     if(index % 2 === 0){
+//         console.log(index);
+//     }
+//     index++;
+// }
+
+console.group();
+let index = 0;
+while (index <= 10) {
+    if(index % 3 === 0){
+        console.log(`${index} divide by 3`);
     }
-   
 
+    if(index % 5 === 0){
+        console.log(`${index} divide by 5`);
+    }
+    index++;
 }
 
-function plus(a, b){
-return a + b;
+let a = 0;
+let sum = 0;
+while (a <= 20) {
+    sum += a;
+    a++;
 }
 
-function minus(a, b){
-return a - b;
-}
+console.log(sum);
 
-function division(a, b){
-return a / b;
-}
+console.groupEnd();
 
-function multiplication(a, b){
-return a * b;
-}
-
-
-console.log(calculator());
-
+// do {
+    
+// } while (condition);
