@@ -1,56 +1,64 @@
 'use strict';
 
-function firstF (func){
- return func();
-}
 
-function secondF(){
-    return 'Hello from second function!';
-}
+let choice = Number(prompt( ));
 
-console.log(firstF(secondF));
 
-/**
- * 
- * @param {Date} obj 
- * @returns {string}
- */
-function myClock (obj){
-    return `Now is ${obj.getHours()} 
-            hours and ${obj.getMinutes()} 
-            minutes and ${obj.getSeconds()} seconds`;
-}
 
-const dateObj = new Date();
-
-/**
- * 
- * @param {number} num 
- * @returns {string}
- */
-function getDevider(num){
+function userChoice(num){
 let result = '';
 
-    if(num % 2 === 0){
 
-        result += 'devide by 2';
-
-    } else if( num % 3 === 0){
-
-        result += 'devide by 3';
-
-    } else if( num % 5 === 0){
-
-        result+= 'devide by 5';
-
-    } else{
-        return 'devide by nothing';
+    if( isNaN(num) ){
+        return 'you input wrong type of data';
     }
+
+    switch (num) {
+        case 1:
+            
+            result += 'monday';
+            break;
+
+        case 2:
+
+            result += ' tuesday';
+            break;
+
+        case 3:
+
+            result += 'wednesday';
+            break;
+
+        case 4:
+
+            result += 'thursday';
+            break;
+
+        case 5:
+
+            result += 'friday';
+            break;
+
+        case 6:
+
+            result += 'saturday';
+            break;
+
+        case 7:
+
+            result += 'sunsday';
+            break;
+    
+        default:
+            result += 'you did not choose anything';
+    }
+
     return result;
 
 }
 
-// console.log(getDevider(12));
-// console.log(getDevider(15));
-// console.log(getDevider(25));
-// console.log(getDevider(11));
+alert(userChoice(choice));
+
+
+
+
